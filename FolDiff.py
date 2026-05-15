@@ -20,7 +20,7 @@ class PathPeer(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("PathPeer Pro - 文件夹对比工具")
+        self.title("FolDiff Pro - 文件夹名对比工具")
         self.width = 900
         self.height = 800
         self.center_window()  # 居中显示
@@ -43,7 +43,7 @@ class PathPeer(ctk.CTk):
         self.draw_google_line()
 
         # --- 2. 标题 ---
-        self.label_title = ctk.CTkLabel(self, text="文件夹差异分析",
+        self.label_title = ctk.CTkLabel(self, text="文件夹名差异分析",
                                         font=ctk.CTkFont(family="Microsoft YaHei", size=26, weight="bold"),
                                         text_color="white")
         self.label_title.grid(row=1, column=0, padx=20, pady=10)
